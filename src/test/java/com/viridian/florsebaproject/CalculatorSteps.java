@@ -14,12 +14,8 @@ public class CalculatorSteps {
 	private Calculator calculator = new Calculator();
 	
 	@Given("^I have entered (\\d+) as first digit into the calculator$")
-    public void enterDigit(int digit) {
-		this.getCalculator().setDigit(new Double(digit));
-	}
-
 	@And("^I have entered (\\d+) as second digit into the calculator$")
-	public void enterOtherDigit(int digit) {
+    public void enterDigit(int digit) {
 		this.getCalculator().setDigit(new Double(digit));
 	}
 	
